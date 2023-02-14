@@ -1,0 +1,31 @@
+@import "../variable/_variable";
+// Mixins start
+@mixin heading-2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: $black;
+}
+
+@mixin item-heading{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+}
+
+@mixin paragraph($line-heigh) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: $line-heigh;
+}
+
+@mixin common-btn($bg, $padding) {
+    background: $bg;
+    box-shadow: 0px 10px 20px rgba(255, 92, 0, 0.2);
+    font-weight: 700;
+    font-size: 20px;
+    color: $white;
+    padding: $padding;
+}
+// Mixins end
